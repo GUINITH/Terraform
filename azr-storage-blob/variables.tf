@@ -15,13 +15,6 @@ variable "storage_accaunt_name" {
 variable "container_name" {
   type        = string
   description = "Nome do storage container"
-  default     = "gui-container"
-
-}
-
-variable "storage_blob_name" {
-  type        = string
-  description = "Nome do storage blob"
-  default     = "gui_blobdev"
+  default     = "guicontainer"
 
 }
