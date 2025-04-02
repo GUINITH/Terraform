@@ -1,0 +1,6 @@
+resource_group_name        =  "group-do-gui-dev"
+location                   =  "Brazil South"
+storage_account_name       =  "stgguidev"
+account_tier               =  "account_tier"
+account_replication_type   =  "GRS"
+storage_container_name     =  "vhds"
