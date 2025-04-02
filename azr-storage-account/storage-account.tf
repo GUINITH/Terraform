@@ -3,7 +3,7 @@ resource "azurerm_resource_group" "resource-group" {
   location = "Brazil South"
 }
 
-resource "azurerm_storage_account" "storage-account" {
+resource "azurerm_storage_account" "sa" {
   name                     = "storageaccountname"
   resource_group_name      = azurerm_resource_group.example.name
   location                 = azurerm_resource_group.example.location
@@ -17,6 +17,6 @@ resource "azurerm_storage_account" "storage-account" {
 
 resource "azurerm_storage_container" "container" {
   name                  = "vhds"
-  storage_account_id    = azurerm_storage_account.example.id
+  storage_account_id    = azurerm_storage_account.sa.id
 }
 
